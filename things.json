@@ -4,4 +4,10 @@
         "price": 1.50,
         "url": "http://google.com"
     }
+
+    {
+        "name": "BIC pens",
+        "price": 0.1625,
+        "url": "http://www.amazon.com/BIC-Round-Comfort-Medium-8-Count/dp/B000XA11FU/ref=sr_1_11?ie=UTF8&qid=1454792228&sr=8-11&keywords=bic+pen"
+    }
 ]
