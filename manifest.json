@@ -5,7 +5,7 @@
     "content_scripts": [
         {
             "matches": [ "http://*/*", "https://*/*" ],
-            "js": [ "content.js" ],
+            "js": [ "findreplace.js" ],
             "run_at": "document_end"
         }
     ]
