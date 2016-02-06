@@ -1,5 +1,5 @@
 var elements = document.getElementsByTagName('*');
-var re = /$[0-9\.]+/i
+var re = /\$([0-9\.]+)/i
 
 function parseMoney(grp) {
     return parseFloat(grp[1]);
@@ -11,8 +11,10 @@ function roundToPlaces(num, places) {
 }
 
 // TODO can't we just regex on the whole HTML (i.e. body text contents)?
-elements.forEach(function(elt) {
-    elt.childNodes.forEach(function(child, idx) {
+for (var j = 0; j < elements.length; j++) {
+    var elt = elements[j];
+    for (var k = 0; k < elt.childNodes.length; k++) {
+        var child = elt.childNodes[k];
         if (child.nodeType === 3) {
             var txt = child.nodeValue;
             // find/replace until there are none left
@@ -23,10 +25,10 @@ elements.forEach(function(elt) {
                 var itemPrice = 1.50;
                 var itemName = "loads of laundry";
 
-                var itemAmt = roundToPlaces(parseMoney(grp), 2);
+                var itemAmt = roundToPlaces(parseMoney(match) / itemPrice, 2);
                 txt = txt.replace(re, itemAmt + " " + itemName);
             }
             elt.replaceChild(document.createTextNode(txt), child);
         }
-    });
-});
+    }
+}
