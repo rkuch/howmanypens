@@ -34,7 +34,6 @@
                     // find/replace until there are none left
                     var match;
                     while (match = txt.match(re)) {
-                        console.log(match);
                         var item = randFromArray(items);
 
                         var itemAmt = roundToPlaces(parseMoney(match) / item.price, 2);
