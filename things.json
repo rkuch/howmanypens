@@ -3,5 +3,9 @@
         "name": "loads of laundry",
         "price": 1.50,
         "url": "http://google.com"
+    },
+    {
+        "name": "quesadillas",
+        "price": "5.99"
     }
 ]
