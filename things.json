@@ -12,5 +12,20 @@
         "name": "BIC pens",
         "price": 0.1625,
         "url": "http://www.amazon.com/BIC-Round-Comfort-Medium-8-Count/dp/B000XA11FU/ref=sr_1_11?ie=UTF8&qid=1454792228&sr=8-11&keywords=bic+pen"
+    },
+    {
+        "name": "slices of New York pizza",
+        "price": 2.33,
+    },
+    {
+        "name": "ounces of wolf urine",
+        "price": 2.165,
+        "url": "http://www.amazon.com/Wolf-Urine-P-Wick-Combo-ounces/dp/B00R6G8G1Q/ref=pd_sim_86_1?ie=UTF8&dpID=41mjoBqLibL&dpSrc=sims&preST=_AC_UL160_SR148%2C160_&refRID=1XD3MYKEE0K0Y4QRNZA5"
+    },
+    {
+        "name": "live ladybugs",
+        "price": 0.015,
+        "url": "http://www.amazon.com/300-Live-Ladybugs-Guaranteed-Delivery/dp/B0054QPVGI/ref=pd_sim_86_2?ie=UTF8&dpID=41-UAEwaZsL&dpSrc=sims&preST=_AC_UL160_SR160%2C160_&refRID=076Q4AN6Q8EKAKXDRDTS"
     }
+
 ]
