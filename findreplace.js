@@ -2,7 +2,7 @@ var elements = document.getElementsByTagName('*');
 //var re = /\$([0-9\.]+)/i
 
 //http://stackoverflow.com/questions/354044/what-is-the-best-u-s-currency-regex
-var re = /[+-]?[0-9]{1,3}(?:,?[0-9]{3})*(?:\.[0-9]{2})?/
+var re = /\$[+-]?[0-9]{1,3}(?:,?[0-9]{3})*(?:\.[0-9]{2})?/
 
 function parseMoney(grp) {
     return parseFloat(grp[1]);
