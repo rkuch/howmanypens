@@ -45,15 +45,11 @@
                         var itemName = item.name;
                         // contextual capitalization only if millions/billions was matched
                         if (written !== "" && written[0] === written[0].toUpperCase()) {
-                            console.log(written, written[0], written[0].toUpperCase());
                             itemName = itemName.split(' ').map(function(elt) {
                                 return elt == "of" ? elt : elt[0].toUpperCase() + elt.substring(1);
                             }).join(' ');
                         }
-                        if (written !== "") {
-                            written = " " + written;
-                        }
-                        txt = txt.replace(re, itemAmt + written + " " + itemName);
+                        txt = txt.replace(re, itemAmt + (written ? " " + written : "") + " " + itemName);
                     }
                     elt.replaceChild(document.createTextNode(txt), child);
                 }
