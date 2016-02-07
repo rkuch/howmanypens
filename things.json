@@ -15,7 +15,7 @@
     },
     {
         "name": "slices of New York pizza",
-        "price": 2.33,
+        "price": 2.33
     },
     {
         "name": "ounces of wolf urine",
@@ -26,6 +26,70 @@
         "name": "live ladybugs",
         "price": 0.015,
         "url": "http://www.amazon.com/300-Live-Ladybugs-Guaranteed-Delivery/dp/B0054QPVGI/ref=pd_sim_86_2?ie=UTF8&dpID=41-UAEwaZsL&dpSrc=sims&preST=_AC_UL160_SR160%2C160_&refRID=076Q4AN6Q8EKAKXDRDTS"
-    }
-
+    },
+	{
+		"name": "Giant Robot Slippers w/ Sound",
+		"price": 69.99,
+		"url": "http://www.amazon.com/gp/product/B00JXLA3QI/ref=as_li_tl?tag=wek075-20&ie=UTF8&camp=1789&creative=390957&creativeASIN=B00JXLA3QI&linkCode=as2&linkId=HDUWQOGVLAQCR4CU"
+	},
+	{
+		"name": "Starbucks tall caffe lattes",
+		"price": 2.95
+	},
+	{
+		"name": "eggs",
+		"price": 0.245
+	},
+	{
+		"name": "gallons of milk",
+		"price": 2.13
+	},
+	{
+		"name": "months of Netflix",
+		"price": 9.99
+	},
+	{
+		"name": "pounds of potato chips",
+		"price": 3.86
+	},
+	{
+		"name": "Canada Goose jackets",
+		"price": 845,
+		"url": "http://www.canada-goose.com/us/en/banff-parka-4074M.html#start=1"
+	},
+	{
+		"name": "Hot Wheels cars",
+		"price": 1,
+		"url": "http://www.amazon.com/Hot-Wheels-Gift-Pack-Styles/dp/B002ZCZ0F6"
+	},
+	{
+		"name": "Disney Frozen Heelys",
+		"price": 70,
+		"url": "http://shop.heelys.com/thunderx2-frozen"
+	},
+	{
+		"name": "Capri Suns",
+		"price": 0.253,
+		"url": "http://www.walmart.com/ip/13908708?wmlspartner=wlpa&adid=22222222227009377987&wl0=&wl1=g&wl2=c&wl3=42530528312&wl4=&wl5=pla&wl6=81186488312&veh=sem"
+	},
+	{
+		"name": "BARBIE Fairytale Summer Ballerina Doll",
+		"price": 6.99,
+		"url": "http://shop.mattel.com/product/index.jsp?productId=49825936"
+	},
+	{
+		"name": "pounds of gum drops",
+		"price": 3.8,
+		"url": "http://www.amazon.com/Candy-Gum-Drops-Lb-Bag/dp/B000IN4S4S"
+	},
+	{
+		"name": "pounds of Haribo Gummi Bears",
+		"price": 2.78,
+		"url": "http://www.amazon.com/Haribo-Gummi-Candy-Gold-Bears-5-Pound/dp/B000EVOSE4"
+	},
+	{
+		"name": "glue sticks",
+		"price": 0.49,
+		"url": "http://www.amazon.com/Avery-Permanent-Washable-White-00161/dp/B000BQPA8U/ref=sr_1_1?ie=UTF8&qid=1454792204&sr=8-1"
+	}
 ]
