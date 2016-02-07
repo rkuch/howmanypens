@@ -10,5 +10,11 @@
             "run_at": "document_end"
         }
     ],
-    "web_accessible_resources": [ "things.json" ]
+    "options_page": "options.html",
+    "web_accessible_resources": [
+        "things.json"
+    ],
+    "permissions": [
+          "storage"
+    ]
 }
