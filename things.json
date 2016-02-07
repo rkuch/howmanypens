@@ -65,6 +65,10 @@
         "name": "barrels of oil",
         "price": 30.89
     },
+    {
+        "name": "boxes of Girl Scout cookies",
+        "price": 5
+    },
 	{
 		"name": "Giant Robot Slippers w/ Sound",
 		"price": 69.99,
