@@ -27,6 +27,44 @@
         "price": 0.015,
         "url": "http://www.amazon.com/300-Live-Ladybugs-Guaranteed-Delivery/dp/B0054QPVGI/ref=pd_sim_86_2?ie=UTF8&dpID=41-UAEwaZsL&dpSrc=sims&preST=_AC_UL160_SR160%2C160_&refRID=076Q4AN6Q8EKAKXDRDTS"
     },
+    {
+        "name": "cases of Natural Light beer",
+        "price": 0.566
+    },
+    {
+        "name": "Blast Zone Magic Castle Inflatable Bounce Houses",
+        "price": 234.52,
+        "url": "http://www.walmart.com/ip/Blast-Zone-Magic-Castle-Inflatable-Bounce-House/13017832"
+    },
+    {
+        "name": "packs of ramen",
+        "price": 0.3975,
+        "url": "http://www.amazon.com/Maruchan-Ramen-Noodle-Chicken-Flavor/dp/B00MHBX8AE"
+    },
+    {
+        "name": "Boeing 747-8s",
+        "price": 357000000
+    },
+    {
+        "name": "banana slicers",
+        "price": 3.99
+    },
+    {
+        "name": "ShamWows",
+        "price": 6.50
+    },
+    {
+        "name": "bottles of Sriracha",
+        "price": 7.99
+    },
+    {
+        "name": "pounds of uranium",
+        "price": 39.25
+    },
+    {
+        "name": "barrels of oil",
+        "price": 30.89
+    },
 	{
 		"name": "Giant Robot Slippers w/ Sound",
 		"price": 69.99,
@@ -63,7 +101,7 @@
 		"url": "http://www.amazon.com/Hot-Wheels-Gift-Pack-Styles/dp/B002ZCZ0F6"
 	},
 	{
-		"name": "Disney Frozen Heelys",
+		"name": "Disney's Frozen-themed Heelys",
 		"price": 70,
 		"url": "http://shop.heelys.com/thunderx2-frozen"
 	},
@@ -73,7 +111,7 @@
 		"url": "http://www.walmart.com/ip/13908708?wmlspartner=wlpa&adid=22222222227009377987&wl0=&wl1=g&wl2=c&wl3=42530528312&wl4=&wl5=pla&wl6=81186488312&veh=sem"
 	},
 	{
-		"name": "BARBIE Fairytale Summer Ballerina Doll",
+		"name": "BARBIE Fairytale Summer Ballerina Dolls",
 		"price": 6.99,
 		"url": "http://shop.mattel.com/product/index.jsp?productId=49825936"
 	},

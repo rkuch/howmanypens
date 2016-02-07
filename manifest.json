@@ -10,7 +10,5 @@
             "run_at": "document_end"
         }
     ],
-    "web_accessible_resources": [
-        "things.json"
-    ]
+    "web_accessible_resources": [ "things.json" ]
 }
