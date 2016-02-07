@@ -91,5 +91,45 @@
 		"name": "glue sticks",
 		"price": 0.49,
 		"url": "http://www.amazon.com/Avery-Permanent-Washable-White-00161/dp/B000BQPA8U/ref=sr_1_1?ie=UTF8&qid=1454792204&sr=8-1"
-	}
+	},
+    {
+        "name": "Peyton Manning jerseys",
+        "price": 50,
+        "url": "http://www.amazon.com/Peyton-Manning-Broncos-NFL-Football/dp/B00EQBPGG2/ref=sr_1_4?s=sporting-goods&ie=UTF8&qid=1454806193&sr=1-4&keywords=peyton+manning+jersey"
+    },
+    {
+        "name": "McDonald's Chicken McNuggets",
+        "price": 0.25,
+        "url": "http://www.fastfoodmenuprices.com/mcdonalds-prices/"
+    },
+    {
+        "name": "packs of glow-sticks",
+        "price": 9.99,
+        "url": "http://www.amazon.com/Etekcity-Sticks-Bracelets-Necklaces-Assorted/dp/B011CFQT3I/ref=sr_1_1?ie=UTF8&qid=1454791493&sr=8-1-spons&keywords=glow+sticks&psc=1"
+    },
+    {
+        "name": "handles of vanilla Burnett's",
+        "price": 9.99,
+        "url": "http://www.crownwineandspirits.com/burnetts-flavored-vodka-vanilla-750ml/"
+    },
+    {
+        "name": "handles of vanilla Burnett's",
+        "price": 9.99,
+        "url": "http://www.crownwineandspirits.com/burnetts-flavored-vodka-vanilla-750ml/"
+    },
+    {
+        "name": "pairs of 14K diamond earrings",
+        "price": 249.99,
+        "url": "http://www.amazon.com/0-50-Round-White-Diamond-Earrings/dp/B00A1SA2TK/ref=sr_1_2?s=apparel&ie=UTF8&qid=1454806779&sr=1-2&nodeID=7141123011&keywords=diamond+earrings"
+    },
+    {
+        "name": "toilet seats",
+        "price": 31.98,
+        "url": "http://www.homedepot.com/p/BEMIS-Adjustable-Slow-Close-Never-Loosens-Elongated-Closed-Front-Toilet-Seat-in-White-1530SLOW-000/205845565"
+    },
+    {
+        "name": "freeze-dried rabbit bits"
+        "price": 9,
+        "url": "http://www.amazon.com/Vital-Essentials-Freeze-Dried-Rabbit-Treats/dp/B00O3GUSHW/ref=sr_1_1?ie=UTF8&qid=1454807011&sr=8-1&keywords=freeze+dried+rabbit"
+    }
 ]
