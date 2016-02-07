@@ -41,13 +41,17 @@
                             itemAmt = 0.01;
                         }
                         itemAmt = roundToPlaces(itemAmt, 2);
-                        var written = match[2] ? " " + match[2] : "";
+                        var written = match[2] ? match[2].trim() : "";
                         var itemName = item.name;
                         // contextual capitalization only if millions/billions was matched
-                        if (written !== "" && written.charAt(0) == written[0].toUpperCase()) {
+                        if (written !== "" && written[0] === written[0].toUpperCase()) {
+                            console.log(written, written[0], written[0].toUpperCase());
                             itemName = itemName.split(' ').map(function(elt) {
                                 return elt == "of" ? elt : elt[0].toUpperCase() + elt.substring(1);
                             }).join(' ');
+                        }
+                        if (written !== "") {
+                            written = " " + written;
                         }
                         txt = txt.replace(re, itemAmt + written + " " + itemName);
                     }
