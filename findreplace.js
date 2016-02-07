@@ -36,9 +36,20 @@
                     while (match = txt.match(re)) {
                         var item = randFromArray(items);
 
-                        var itemAmt = roundToPlaces(parseMoney(match) / item.price, 2);
+                        var itemAmt = parseMoney(match) / item.price;
+                        if (itemAmt < 0.01) {
+                            itemAmt = 0.01;
+                        }
+                        itemAmt = roundToPlaces(itemAmt, 2);
                         var written = match[2] ? " " + match[2] : "";
-                        txt = txt.replace(re, itemAmt + written + " " + item.name);
+                        var itemName = item.name;
+                        // contextual capitalization only if millions/billions was matched
+                        if (written !== "" && written.charAt(0) == written[0].toUpperCase()) {
+                            itemName = itemName.split(' ').map(function(elt) {
+                                return elt == "of" ? elt : elt[0].toUpperCase() + elt.substring(1);
+                            }).join(' ');
+                        }
+                        txt = txt.replace(re, itemAmt + written + " " + itemName);
                     }
                     elt.replaceChild(document.createTextNode(txt), child);
                 }
