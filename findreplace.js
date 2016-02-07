@@ -16,46 +16,52 @@
     //http://stackoverflow.com/questions/354044/what-is-the-best-u-s-currency-regex
     var re = /\$[+-]?([0-9,]+(?:\.[0-9]+)?)( (million|billion|trillion|thousand))?/i;
     var elements = document.getElementsByTagName('*');
+    
+    chrome.storage.sync.get(['currencyType'], function(storage) {
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState != XMLHttpRequest.DONE) {
+                return;
+            }
 
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState != XMLHttpRequest.DONE) {
-            return;
-        }
+            var items = JSON.parse(xhr.responseText);
 
-        var items = JSON.parse(xhr.responseText);
+            // XXX: can't we just regex on the whole HTML (i.e. body text contents)?
+            for (var j = 0; j < elements.length; j++) {
+                var elt = elements[j];
+                for (var k = 0; k < elt.childNodes.length; k++) {
+                    var child = elt.childNodes[k];
+                    if (child.nodeType === 3) {
+                        var txt = child.nodeValue;
+                        // find/replace until there are none left
+                        var match;
+                        while (match = txt.match(re)) {
+                            var item = randFromArray(items);
 
-        // XXX: can't we just regex on the whole HTML (i.e. body text contents)?
-        for (var j = 0; j < elements.length; j++) {
-            var elt = elements[j];
-            for (var k = 0; k < elt.childNodes.length; k++) {
-                var child = elt.childNodes[k];
-                if (child.nodeType === 3) {
-                    var txt = child.nodeValue;
-                    // find/replace until there are none left
-                    var match;
-                    while (match = txt.match(re)) {
-                        var item = randFromArray(items);
+                            if (storage.currencyType == 'classic') {
+                                item = items[0];
+                            }
 
-                        var itemAmt = parseMoney(match) / item.price;
-                        if (itemAmt < 0.01) {
-                            itemAmt = 0.01;
+                            var itemAmt = parseMoney(match) / item.price;
+                            if (itemAmt < 0.01) {
+                                itemAmt = 0.01;
+                            }
+                            itemAmt = roundToPlaces(itemAmt, 2);
+                            var written = match[2] ? match[2].trim() : "";
+                            var itemName = item.name;
+                            // contextual capitalization only if millions/billions was matched
+                            if (written !== "" && written[0] === written[0].toUpperCase()) {
+                                itemName = itemName.split(' ').map(function(elt) {
+                                    return elt == "of" ? elt : elt[0].toUpperCase() + elt.substring(1);
+                                }).join(' ');
+                            }
+                            txt = txt.replace(re, itemAmt + (written ? " " + written : "") + " " + itemName);
                         }
-                        itemAmt = roundToPlaces(itemAmt, 2);
-                        var written = match[2] ? match[2].trim() : "";
-                        var itemName = item.name;
-                        // contextual capitalization only if millions/billions was matched
-                        if (written !== "" && written[0] === written[0].toUpperCase()) {
-                            itemName = itemName.split(' ').map(function(elt) {
-                                return elt == "of" ? elt : elt[0].toUpperCase() + elt.substring(1);
-                            }).join(' ');
-                        }
-                        txt = txt.replace(re, itemAmt + (written ? " " + written : "") + " " + itemName);
+                        elt.replaceChild(document.createTextNode(txt), child);
                     }
-                    elt.replaceChild(document.createTextNode(txt), child);
                 }
             }
-        }
-    }; // Implemented elsewhere.
+        }; // Implemented elsewhere.
+    });
     xhr.open("GET", chrome.extension.getURL('/things.json'), true);
     xhr.send();
 })();
